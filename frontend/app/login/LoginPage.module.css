@@ -1,0 +1,95 @@
+.page {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1499346030926-9a72daac6c63?q=80&w=2400&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 32px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+.primaryBtn {
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  color: #111;
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  box-shadow: 0 12px 30px rgba(245, 158, 11, 0.45);
+}
+
+.secondaryBtn {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.error {
+  color: #ffd4d4;
+  font-size: 14px;
+}
+
+.homeLink {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}

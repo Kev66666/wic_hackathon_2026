@@ -1,0 +1,135 @@
+.page {
+  min-height: calc(100vh - 54px);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+  color: #1f2937;
+
+  /* 田园背景图 + 兜底渐变 */
+  background:
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2400&auto=format&fit=crop")
+      center / cover no-repeat,
+    linear-gradient(180deg, #eaf6ff 0%, #ffffff 60%);
+}
+
+/* 柔光遮罩：让文字更清晰，也更“插画” */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 520px at 30% 25%, rgba(255,255,255,0.55), transparent 65%),
+    radial-gradient(800px 520px at 70% 30%, rgba(255,255,255,0.35), transparent 65%),
+    linear-gradient(180deg, rgba(255,255,255,0.20), rgba(255,255,255,0.05));
+  pointer-events: none;
+}
+
+/* 轻微的“云雾”漂白层 */
+.haze {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(closest-side, rgba(255,255,255,0.22), transparent 70%);
+  transform: rotate(10deg);
+  filter: blur(28px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* 中央卡片：更“温暖纸张 + 玻璃” */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  padding: 26px 24px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.18);
+  z-index: 2;
+}
+
+/* 小标签：像“田园小徽章” */
+.badge {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.10);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  font-size: 12px;
+  font-weight: 700;
+  color: #14532d;
+}
+
+.title {
+  margin: 14px 0 8px;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  color: #0f172a;
+}
+
+.sub {
+  margin: 0 0 18px;
+  color: rgba(15, 23, 42, 0.70);
+  line-height: 1.55;
+}
+
+/* 信息块：更柔和 */
+.profileRow {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.label {
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.value {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+/* 主按钮：暖黄 + 更田园 */
+.btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  color: #1f2937;
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  box-shadow: 0 14px 35px rgba(245, 158, 11, 0.25);
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}
+
+/* 田园装饰：用“叶子/小花”的轻量 SVG 容器（如果你保留原来的 rocket/rover div，也不会显示得突兀） */
+.decorRover,
+.decorRocket {
+  display: none; /* 田园风直接隐藏火箭/月球车 */
+}
+
+/* 小屏适配 */
+@media (max-width: 420px) {
+  .title { font-size: 26px; }
+  .card { padding: 22px 18px; }
+}
