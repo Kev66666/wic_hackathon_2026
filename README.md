@@ -15,6 +15,6 @@ Team
 Algorithms & Concept Design  
 Wynne Chen  
 Sunny Qin  
-Technical Implementation**  
+Technical Implementation  
 Ziyang Jiang  
 Houting Chen
