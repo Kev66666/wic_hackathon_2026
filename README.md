@@ -1,20 +1,21 @@
-Pet Together 🐾
-Hackathon project – McWICS Hackathon 2026
+# Pet Together 🐾
 
-Pet Together is a collaborative virtual pet platform designed to help friends and family stay connected through shared interaction with a digital pet.
+Pet Together is a collaborative virtual pet platform designed to help friends and family stay connected through a shared digital pet.
 
-Instead of just chatting, users raise a virtual pet together while communicating.
+Instead of just chatting, users interact with and raise a virtual pet together, turning communication into a shared experience.
 
-Demo video
+## Demo
 https://devpost.com/software/pet-together
 
-Built at
+## Built at
 McWICS Hackathon 2026
 
-Team
+## Team
+
 Algorithms & Concept Design  
-Wynne Chen  
-Sunny Qin  
+Wynne Chen – project idea & algorithm design  
+Sunny Qin – algorithm design  
+
 Technical Implementation  
-Ziyang Jiang  
-Houting Chen
+Ziyang Jiang – backend development  
+Houting Chen – frontend development
